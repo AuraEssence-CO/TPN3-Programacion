@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Turnos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="contenedor">
+        <h1>Sistema de Atención</h1>
+
+        <!-- Input y botones -->
+        <div class="controles">
+            <input type="text" id="nombreInput" placeholder="Ingrese nombre">
+            <button id="btnAnotar" class="btn btn-anotar">Anotar</button>
+            <button id="btnAtender" class="btn btn-atender">Atender</button>
+            <button id="btnReset" class="btn btn-reset">Reiniciar día</button>
+        </div>
+
+        <!-- Visor -->
+        <h2>Atendiendo ahora:</h2>
+        <div id="visor">Nadie</div>
+        <p id="contador">En espera: 0 personas</p>
+
+        <!-- Lista -->
+        <h2>Fila de espera:</h2>
+        <ul id="lista"></ul>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
